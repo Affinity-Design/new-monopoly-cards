@@ -56,10 +56,14 @@ a:hover {
 /* Class Styles */
 
 .top {
+  display: flex;
   width: 100%;
   margin-top: 0px;
   padding-top: 145px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-image: url(assets/logo.png);
+
   background-repeat: no-repeat;
   background-position: center;
   /* border: 5px solid #000000; */
@@ -89,6 +93,15 @@ a:hover {
   position: relative;
 }
 
+.message {
+  position: absolute;
+  max-height: 160px;
+  top: 90px;
+  padding: 0px 5em 0px 5em;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 18px;
+}
+
 .linkBox {
   display: flex;
   flex-direction: row;
@@ -96,76 +109,6 @@ a:hover {
   max-width: 500px;
   width: 100%;
   margin-top: 10px;
-
-}
-
-
-@keyframes cardAppear {
-  0% {
-    transform: rotate3d(0, 0, 1, -15deg) translate3d(0, -100vh, 0);
-  }
-  30% {
-    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
-  }
-  65% {
-    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
-  }
-  80% {
-    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
-  }
-}
-
-@keyframes cardAppear1 {
-  0% {
-    transform: rotate3d(0, 0, 1, -15deg) translate3d(0, -100vh, 0);
-  }
-  30% {
-    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
-  }
-  65% {
-    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
-  }
-  80% {
-    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
-  }
-}
-
-@keyframes cardAppear2 {
-  0% {
-    transform: rotate3d(0, 0, 1, 15deg) translate3d(-100vw, 0, 0);
-  }
-  30% {
-    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
-  }
-  65% {
-    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
-  }
-  80% {
-    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
-  }
-}
-
-@keyframes cardAppear3 {
-  0% {
-    transform: rotate3d(0, 0, 1, -15deg) translate3d(100vw, 0, 0);
-  }
-  30% {
-    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
-  }
-  65% {
-    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
-  }
-  80% {
-    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
-  }
-}
-
-.message {
-  max-height: 200px;
-  margin-top: 40px;
-  padding: 0px 100px 0px 100px;
-  font-family: 'Signika Negative', sans-serif;
-  font-size: 20px;
 }
 
 .buttonsBox {
@@ -183,7 +126,8 @@ a:hover {
   font-family: 'Signika Negative', sans-serif;
   font-weight: 700;
   width: 50%;
-  padding: 2rem 2rem;
+  height: 5rem;
+  padding: 1.5rem;
   font-size: 1rem;
   border-radius: 0.15rem / 100%;
   box-shadow: 5px 5px 5px 5px #35353523;
@@ -278,4 +222,66 @@ a:hover {
 #Selector-Box {
   display: block;
   padding: 50px;
+}
+
+/* Animation Keyframes */
+
+@keyframes cardAppear {
+  0% {
+    transform: rotate3d(0, 0, 1, -15deg) translate3d(0, -100vh, 0);
+  }
+  30% {
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
+  }
+  65% {
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  80% {
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+}
+
+@keyframes cardAppear1 {
+  0% {
+    transform: rotate3d(0, 0, 1, -15deg) translate3d(0, -100vh, 0);
+  }
+  30% {
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
+  }
+  65% {
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  80% {
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+}
+
+@keyframes cardAppear2 {
+  0% {
+    transform: rotate3d(0, 0, 1, 15deg) translate3d(-100vw, 0, 0);
+  }
+  30% {
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
+  }
+  65% {
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  80% {
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+}
+
+@keyframes cardAppear3 {
+  0% {
+    transform: rotate3d(0, 0, 1, -15deg) translate3d(100vw, 0, 0);
+  }
+  30% {
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
+  }
+  65% {
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  80% {
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
 }
